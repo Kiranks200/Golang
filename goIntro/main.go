@@ -18,3 +18,9 @@ func value(x float64) float64 {
 func add(x, y int) int {
 	return x + y
 }
+
+einfoeiwmcoiw,ce
+eiewlmjweoi cnh
+wefnicoweimcfoiewc
+wercuhoewmciwe
+weicunhomewrce
