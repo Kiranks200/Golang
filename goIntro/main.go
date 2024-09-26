@@ -25,14 +25,15 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	} else {
-		fmt.Println("input converted to decimal", inputconvert)
+		if inputconvert > 5 {
+			fmt.Println("invlid input")
+		} else {
+			fmt.Println("input converted to decimal", inputconvert)
+		}
 	}
 
 	fmt.Println(value(2))
 	fmt.Println(add(12, 23))
-
-	//hitesh choudhary 
-	//Golang ep-9 
 
 }
 
