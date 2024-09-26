@@ -35,6 +35,8 @@ func main() {
 	fmt.Println(value(2))
 	fmt.Println(add(12, 23))
 
+	//ep-18
+
 }
 
 func value(x float64) float64 {
