@@ -18,8 +18,8 @@ func main() {
 	msg, _ := reader.ReadString('\n')
 	fmt.Println("Learing Golang as a ", msg)
 
+	fmt.Println("Rate the Golang between 1 to 5 ")
 	input, _ := reader.ReadString('\n')
-	fmt.Println("Rate the Golang between 1 to 5 ", input)
 	inputconvert, err := strconv.ParseFloat(strings.TrimSpace(input), 64)
 
 	if err != nil {
@@ -32,11 +32,9 @@ func main() {
 		}
 	}
 
-	fmt.Println(value(2))
-	fmt.Println(add(12, 23))
-
-	//ep-18
-
+	defer fmt.Println(value(2))      // defer - to execute at last(LIFO). printed second
+	defer fmt.Println(adder(12, 12)) //printed first
+	fmt.Println(proadder(2, 3, 4, 5, 6, 7, 8, 8, 6, 5, 4, 4, 4))
 }
 
 func value(x float64) float64 {
@@ -44,6 +42,15 @@ func value(x float64) float64 {
 }
 
 // function to add
-func add(x, y int) int {
+func adder(x int, y int) int {
 	return x + y
+}
+
+func proadder(values ...int) int { // ... - can give more paramertric values as input
+	total := 0
+
+	for _, a := range values {
+		total += a
+	}
+	return total
 }

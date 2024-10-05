@@ -25,7 +25,7 @@ func main() {
 	*b = 20         //output :20
 	fmt.Println(a)  //output :20
 
-	// &->referance ,*->for the actual valure of the pointer
+	// &->referance ,*->for the actual value of the pointer
 
 	var listMix = []string{"wef", "23", "qreq", "erwer"}
 	listMix = append(listMix[1:3])
