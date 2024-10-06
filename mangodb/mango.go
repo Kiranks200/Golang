@@ -16,7 +16,7 @@ func main() {
 
 	client, err := mongo.Connect(context.TODO(), clientOptions)
 	if err != nil {
-		log.Fatal(err)
+		panic(err)
 	}
 
 	err = client.Ping(context.TODO(), nil)
@@ -28,8 +28,8 @@ func main() {
 
 	collection := client.Database("demoDB").Collection("info_colletions")
 
-	newDocument := bson.D{{"name", "D"}, {"age", 34}, {"city", "egg Island"}}
-	insertResult, err := collection.InsertOne(context.TODO(), newDocument)
+	document1 := bson.D{{"name", "D"}, {"age", 34}, {"city", "egg Island"}}
+	insertResult, err := collection.InsertOne(context.TODO(), document1)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -48,7 +48,7 @@ func main() {
 
 	defer func() {
 		if err = client.Disconnect(context.TODO()); err != nil {
-			log.Fatal(err)
+			panic(err)
 		}
 	}()
 }
