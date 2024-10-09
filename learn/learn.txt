@@ -1,0 +1,16 @@
+goroutines- to achieve parallelism(doing multiple tasks at the same time).
+          - managed by GO runtime
+          - lightweight
+          - sync package is usually used to wait for the goroutines to be completed.
+                - in sync we use Add,Wait,Done methods.
+          - we can also use time.sleep to wait for goroutines to complete but is not usually preferred. 
+
+race condition- more goroutines try to access same memory space.
+              - Solution : mutex 
+
+mutex- provides lock() over the memory.
+     - has unlock()
+     - readwrite (RWmutex) reading goroutine is terminated until write is all done.
+
+Channels- to achieve concurrency(doing multiple tasks one after the other)
+        - multiple goroutines talk with each other.
