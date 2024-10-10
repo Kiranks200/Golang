@@ -20,17 +20,17 @@ func main() {
 	fmt.Printf("%v \n", kiran)  //{Kiran kiran@gmail true 19}
 	fmt.Printf("%+v \n", kiran) //{Name:Kiran Email:kiran@gmail Stat:true Age:19}
 	kiran.Greetuser()
-	kiran.Newemail()
-
+	fmt.Println(kiran.Newemail())
 }
 
-// method in golang
+// methods in golang
+
 func (u User) Greetuser() { // method name first letter capital as we have to export it
 	fmt.Println("Hi", u.Name)
 
 }
 
-func (u User) Newemail() {
-	u.Email = "test@gmail.com" //only creates a copy doesnot change the original value
-	fmt.Println(u.Email)       //if we want to cahnge the OG value we can use pointers
+func (u User) Newemail() string {   // func (u *User) Newemail() string{} - pointers can be used to change the original value.
+	u.Email = "test@gmail.com"     // func (u User) Newemail() string{} - this method only creates a copy doesnot change the original value
+	return (u.Email)          
 }

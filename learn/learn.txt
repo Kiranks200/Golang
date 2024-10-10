@@ -1,3 +1,7 @@
+Method- A method is a function with a special receiver argument.
+      - a method is just a function with a receiver argument.
+      - The receiver appears in its own argument list between the func keyword and the method name.
+
 goroutines- to achieve parallelism(doing multiple tasks at the same time).
           - managed by GO runtime
           - lightweight
@@ -14,3 +18,4 @@ mutex- provides lock() over the memory.
 
 Channels- to achieve concurrency(doing multiple tasks one after the other)
         - multiple goroutines talk with each other.
+        - buffered channels can hold multiple values before they are read.
