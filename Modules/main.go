@@ -6,7 +6,6 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux" //it is a midddleware which defines routes for the web applications
-	
 	//github.com/go-chi/chi/middleware we can also use this for middleware routing
 )
 
@@ -26,6 +25,6 @@ func greeter() {
 
 func ServerHome(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("<h1>Code with Golang</h1>"))
-	w.Write([]byte("<iframe src=https://www.youtube.com/embed/dQw4w9WgXcQ>click</iframe>")) //writing somthing onto the webpage
-
+	//writing somthing onto the webpage
+	w.Write([]byte("<iframe width=500 height=500 src=https://www.youtube.com/embed/dQw4w9WgXcQ frameborder=0 allow=accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share referrerpolicy=strict-origin-when-cross-origin allowfullscreen>click</iframe>"))
 }

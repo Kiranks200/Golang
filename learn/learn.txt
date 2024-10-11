@@ -19,3 +19,8 @@ mutex- provides lock() over the memory.
 Channels- to achieve concurrency(doing multiple tasks one after the other)
         - multiple goroutines talk with each other.
         - buffered channels can hold multiple values before they are read.
+
+
+Gin - It is a web framework written in Golang. 
+    - It features a Martini-like API, but with performance up to 40 times faster than Martini. 
+    - for needed performance and productivity gin is most likely the option.
