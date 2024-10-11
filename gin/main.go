@@ -29,5 +29,5 @@ func main() {
 }
 
 func getAlbums(c *gin.Context) {
-	c.IndentedJSON(http.StatusOK, albums) //pretty JSON & sets the Content-Type as "application/json".
+	c.IndentedJSON(http.StatusOK, albums) //IndentedJSON - pretty JSON & sets the Content-Type as "application/json".
 }
