@@ -2,6 +2,10 @@ Method- A method is a function with a special receiver argument.
       - a method is just a function with a receiver argument.
       - The receiver appears in its own argument list between the func keyword and the method name.
 
+generics- you can declare and use functions or types that are written to work with any of a set of types provided by calling code.
+
+fuzzing- random data is run against your test in an attempt to find vulnerabilities or crash-causing inputs.
+
 goroutines- to achieve parallelism(doing multiple tasks at the same time).
           - managed by GO runtime
           - lightweight

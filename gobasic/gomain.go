@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"sort"
 	"time"
+
+	"golang.org/x/example/hello/reverse"
 )
 
 func main() {
@@ -67,5 +69,7 @@ func main() {
 	for key, value := range languages {
 		fmt.Println(key, value)
 	}
+
+	fmt.Println("reverse of string Hello is", reverse.String("Hello"))
 
 }
