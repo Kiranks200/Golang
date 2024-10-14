@@ -15,7 +15,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Printf("response of type %T", response)
+	fmt.Printf("response of type %T\n", response)
 	//fmt.Println(response)
 
 	defer response.Body.Close()
@@ -25,6 +25,6 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Println("content of the website is : ", string(databytes)) //prints all the webcontent including the tags
+	fmt.Println("content of the website is : ", string(databytes)) //prints all the webcontent(html)
 
 }

@@ -11,11 +11,13 @@ import (
 func main() {
 	fmt.Println("Get,Post,PostForm handling for index.js using Golang")
 
-	//	Perform_getrequests()
-	//Perform_Jsonpost()
+	// Perform_getrequests()
+	// Perform_Jsonpost()
 	Perform_postFormRequst()
 
 }
+
+//run the index,js in webserver folder
 
 func Perform_getrequests() {
 	const myurl = "http://localhost:8000/get"
