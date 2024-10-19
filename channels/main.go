@@ -39,6 +39,7 @@ func main() {
 	x, y := <-c, <-c // receive from c
 
 	fmt.Println(x, y, x+y)
+	defer close(c)
 }
 
 func sum(s []int, c chan int) {
