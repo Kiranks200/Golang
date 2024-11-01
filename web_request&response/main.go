@@ -47,7 +47,7 @@ func Perform_Jsonpost() {
 	//fake json payload
 	requestBody := strings.NewReader(`
 	{
-		"Cousenme":"reactjs",
+		"Cousename":"reactjs",
 		"amount":4000,
 		"website":"udemy"
 	}
