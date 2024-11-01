@@ -24,7 +24,7 @@ func main() {
 	for key, val := range result.Query() {
 		fmt.Println(key, val)
 	}
-	partsofurl := &url.URL{
+	partsofurl := &url.URL{ //creating url
 		Scheme:   "https",
 		Host:     "localhost:9000",
 		Path:     "tutorial",

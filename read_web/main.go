@@ -9,14 +9,14 @@ import (
 const url = "https://pandas.pydata.org/"
 
 func main() {
-	fmt.Println("web requests")
+	fmt.Println("Read webpage")
 
 	response, err := http.Get(url)
 	if err != nil {
 		panic(err)
 	}
 	fmt.Printf("response of type %T\n", response)
-	//fmt.Println(response)
+	//fmt.Println(response) //gives response about status code,content-type,date,last_modified,server-timing etc
 
 	defer response.Body.Close()
 

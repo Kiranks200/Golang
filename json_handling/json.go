@@ -15,7 +15,7 @@ type course struct {
 
 func main() {
 	fmt.Println("JSON handling using Golang")
-	//JsonEncoding()
+	JsonEncoding()
 	DecodeJSon()
 }
 
