@@ -51,7 +51,7 @@ type Numbers struct {
 	x, y int
 }
 
-func (n Numbers) addition() int { // this method can also be defined as a function - func addition(n Numbers) int {}.
+func (n Numbers) addition() int { // this method can also be defined as a function - func addition(n Numbers) int {#code}.
 	return n.x + n.y
 }
 
