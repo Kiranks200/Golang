@@ -25,7 +25,7 @@ func main() {
 
 // methods in golang
 
-func (u User) Greetuser() { // method name first letter capital as we have to export it
+func (u User) Greetuser() { // in method name first letter capital as we have to export it to other packages or workspaces
 	fmt.Println("Hi", u.Name)
 
 }
