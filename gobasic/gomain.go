@@ -24,13 +24,13 @@ func main() {
 	var b *int = &a //b is a pointer to a
 	fmt.Println(b)  //output :0xc0000a8000
 	fmt.Println(*b) //output :10
-	*b = 20         //output :20
-	fmt.Println(a)  //output :20
+	*b = 20
+	fmt.Println(a) //output :20
 
 	// &->referance ,*->for the actual value of the pointer
 
 	var listMix = []string{"wef", "23", "qreq", "erwer"}
-	listMix = append(listMix[1:3])
+	listMix = append(listMix, "GoMod")
 	fmt.Println(listMix)
 
 	score := make([]int, 4)
@@ -64,7 +64,7 @@ func main() {
 	fmt.Println("maps : ", languages)
 	fmt.Println("c is mapped as : ", languages["c"])
 	delete(languages, "c") //can be used to delete in maps and slices
-	fmt.Println("map : ", languages)
+	fmt.Println("maps after deleting c : ", languages)
 
 	for key, value := range languages {
 		fmt.Println(key, value)

@@ -51,7 +51,7 @@ type Numbers struct {
 	x, y int
 }
 
-func (n Numbers) addition() int { // Methods with Pointer Receivers - func addition(n Numbers) int {#code}.
+func (n Numbers) addition() int { // Method with Pointer Receivers - func addition(n Numbers) int {#code}.
 	return n.x + n.y
 }
 
